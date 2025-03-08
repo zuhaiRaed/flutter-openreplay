@@ -60,6 +60,7 @@ OpenReplayWrapper(
     // Your existing MaterialApp configuration
   ),
 );
+```
 
 ## Step 5: Enable Navigation Tracking
 Add the `OpenReplayNavigatorObserver` to your `MaterialApp`'s `navigatorObservers` to track navigation events:
