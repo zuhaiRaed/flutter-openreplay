@@ -1,0 +1,94 @@
+PODS:
+  - BitByteData (2.0.4)
+  - DeviceKit (5.5.0)
+  - Flutter (1.0.0)
+  - integration_test (0.0.1):
+    - Flutter
+  - Openreplay (1.0.13):
+    - DeviceKit
+    - SWCompression
+  - openreplay_sdk (0.0.1):
+    - Flutter
+    - Openreplay (~> 1.0.13)
+  - SWCompression (4.8.6):
+    - BitByteData (~> 2.0)
+    - SWCompression/BZip2 (= 4.8.6)
+    - SWCompression/Deflate (= 4.8.6)
+    - SWCompression/GZip (= 4.8.6)
+    - SWCompression/LZ4 (= 4.8.6)
+    - SWCompression/LZMA (= 4.8.6)
+    - SWCompression/LZMA2 (= 4.8.6)
+    - SWCompression/SevenZip (= 4.8.6)
+    - SWCompression/TAR (= 4.8.6)
+    - SWCompression/XZ (= 4.8.6)
+    - SWCompression/ZIP (= 4.8.6)
+    - SWCompression/Zlib (= 4.8.6)
+  - SWCompression/BZip2 (4.8.6):
+    - BitByteData (~> 2.0)
+  - SWCompression/Deflate (4.8.6):
+    - BitByteData (~> 2.0)
+  - SWCompression/GZip (4.8.6):
+    - BitByteData (~> 2.0)
+    - SWCompression/Deflate
+  - SWCompression/LZ4 (4.8.6):
+    - BitByteData (~> 2.0)
+  - SWCompression/LZMA (4.8.6):
+    - BitByteData (~> 2.0)
+  - SWCompression/LZMA2 (4.8.6):
+    - BitByteData (~> 2.0)
+    - SWCompression/LZMA
+  - SWCompression/SevenZip (4.8.6):
+    - BitByteData (~> 2.0)
+    - SWCompression/LZMA2
+  - SWCompression/TAR (4.8.6):
+    - BitByteData (~> 2.0)
+  - SWCompression/XZ (4.8.6):
+    - BitByteData (~> 2.0)
+    - SWCompression/LZMA2
+  - SWCompression/ZIP (4.8.6):
+    - BitByteData (~> 2.0)
+    - SWCompression/Deflate
+  - SWCompression/Zlib (4.8.6):
+    - BitByteData (~> 2.0)
+    - SWCompression/Deflate
+
+DEPENDENCIES:
+  - Flutter (from `Flutter`)
+  - integration_test (from `.symlinks/plugins/integration_test/ios`)
+  - Openreplay (from `https://github.com/openreplay/ios-tracker.git`, tag `1.0.13`)
+  - openreplay_sdk (from `.symlinks/plugins/openreplay_sdk/ios`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - BitByteData
+    - DeviceKit
+    - SWCompression
+
+EXTERNAL SOURCES:
+  Flutter:
+    :path: Flutter
+  integration_test:
+    :path: ".symlinks/plugins/integration_test/ios"
+  Openreplay:
+    :git: https://github.com/openreplay/ios-tracker.git
+    :tag: 1.0.13
+  openreplay_sdk:
+    :path: ".symlinks/plugins/openreplay_sdk/ios"
+
+CHECKOUT OPTIONS:
+  Openreplay:
+    :git: https://github.com/openreplay/ios-tracker.git
+    :tag: 1.0.13
+
+SPEC CHECKSUMS:
+  BitByteData: 2422ed269fcddc44976d97f171a183d25ef535ce
+  DeviceKit: d83e38ca196a4ebf0cc5f37d6f0316a24b794d5b
+  Flutter: e0871f40cf51350855a761d2e70bf5af5b9b5de7
+  integration_test: 252f60fa39af5e17c3aa9899d35d908a0721b573
+  Openreplay: f016504d94ede93e3fc120b6e09de0f7cf5119e0
+  openreplay_sdk: 3f15fea88d025a500a117440bfb867c50b0171f5
+  SWCompression: 9379873ad5e9f25b31db88c441649b59a4c2bab7
+
+PODFILE CHECKSUM: e6dac006d0167abfcbfa7f3ec026a59c9d7993a6
+
+COCOAPODS: 1.16.2
