@@ -15,6 +15,8 @@ extension TrackingContextExtension on BuildContext {
 
   // Shorthand methods for common tracking actions
   void trackButtonPress(String buttonId, [Map<String, dynamic>? data]) {
+    debugPrint("Tracked button press: $buttonId");
+
     tracking.trackButtonPress(buttonId, data);
   }
 
@@ -40,6 +42,7 @@ extension TrackingWidgetExtension on Widget {
           onTap: () {
             context.trackButtonPress(actionId, metadata);
             onTap();
+            debugPrint("Tracked button press: $actionId");
           },
           child: this,
         );

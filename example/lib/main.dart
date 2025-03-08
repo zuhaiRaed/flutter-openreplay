@@ -74,8 +74,6 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    final tracking = TrackingProvider.of(context);
-
     return Scaffold(
       appBar: AppBar(
         title: const Text('OpenReplay Demo'),
@@ -95,7 +93,8 @@ class _HomePageState extends State<HomePage> {
             ElevatedButton(
               onPressed: () {
                 // Use tracking directly for this button press
-                tracking.trackButtonPress('report_issue_button');
+
+                context.trackButtonPress('report_issue_button');
 
                 // Show a snackbar
                 ScaffoldMessenger.of(context).showSnackBar(
@@ -108,7 +107,7 @@ class _HomePageState extends State<HomePage> {
             // Example of tracking a more complex user action
             TextButton(
               onPressed: () {
-                tracking.trackUserAction('settings_access', {
+                context.trackUserAction('settings_access', {
                   'from_screen': 'home',
                   'user_level': 'standard',
                 });

@@ -69,3 +69,12 @@ navigatorObservers: [
   OpenReplayNavigatorObserver(),
 ],
 ```
+
+**Note**: You can use the `BuildContext` extension provided in the SDK to access tracking functions directly. For example:
+```dart
+context.trackUserAction('settings_access', {
+  'from_screen': 'home',
+  'user_level': 'standard',
+});
+```
+
